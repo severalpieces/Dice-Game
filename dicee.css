@@ -1,0 +1,64 @@
+body {
+  background-color: #393e46;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.dice-container > div {
+  flex: 1 1 0;
+  max-width: 35vw;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  text-shadow: 5px 0 #232931; /*水平方向向右5px的阴影(向左就是-5px)，垂直方向没有阴影，阴影颜色为... 。还可以通过blur-radius调整阴影区域的大小*/
+  font-size: 16vw; /*用vw比rem更加responsive */
+  font-weight: 700;
+  color: #4ecca3;
+}
+
+p {
+  font-size: 4vw;
+  color: #4ecca3;
+  font-family: "Indie Flower", cursive;
+}
+
+img {
+  max-width: 100%;
+}
+
+.button-style{
+    text-decoration: none; /*去掉href自带的下划线 */
+    color: #393e46;
+    text-shadow: 5px 0 1rem white;
+    font-family: "Indie Flower", cursive;
+    font-weight: 1000;
+    font-size: 4vw;
+    background-color: #4ecca3;
+    border: none;
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+footer {
+  color: #eeeeee;
+  font-family: "Indie Flower", cursive;
+  font-size: 3vw;
+}
+
+.win-text{
+    font-size: 14vw;
+}
