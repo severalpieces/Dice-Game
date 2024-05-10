@@ -25,13 +25,13 @@ body {
 h1 {
   font-family: "Lobster", cursive;
   text-shadow: 5px 0 #232931; /*水平方向向右5px的阴影(向左就是-5px)，垂直方向没有阴影，阴影颜色为... 。还可以通过blur-radius调整阴影区域的大小*/
-  font-size: 16vw; /*用vw比rem更加responsive */
+  font-size: 6rem; /*用vw比rem更加responsive */
   font-weight: 700;
   color: #4ecca3;
 }
 
 p {
-  font-size: 4vw;
+  font-size: 1.5rem;
   color: #4ecca3;
   font-family: "Indie Flower", cursive;
 }
@@ -46,19 +46,39 @@ img {
     text-shadow: 5px 0 1rem white;
     font-family: "Indie Flower", cursive;
     font-weight: 1000;
-    font-size: 4vw;
+    font-size: 2rem;
     background-color: #4ecca3;
     border: none;
-    padding-left: 4vw;
-    padding-right: 4vw;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 footer {
   color: #eeeeee;
   font-family: "Indie Flower", cursive;
-  font-size: 3vw;
+  font-size: 1rem;
 }
 
 .win-text{
-    font-size: 14vw;
+    font-size: 5.5rem;
+}
+
+@media (max-width:600px) {
+ h1{
+  font-size: 4rem;
+ }
+ 
+ .win-text{
+  font-size: 4rem;
+ }
+
+ .button-style{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+  font-size: 1.75rem;
+ }
+
+ footer{
+  font-size: 1rem;
+ }
 }
